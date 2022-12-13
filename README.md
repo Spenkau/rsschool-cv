@@ -1,1 +1,1 @@
-https://Spenkau.github.io/rsschool-cv/rsschool-cv-html
+https://Spenkau.github.io/rsschool-cv/index.html
