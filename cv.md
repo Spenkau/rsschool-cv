@@ -23,8 +23,7 @@
   </li>
   <li>
     <p>5. Multi-level sorting on React:</p>
-```
-      const filterByTitle = () => data.filter(item => {
+      ```const filterByTitle = () => data.filter(item => {
         return value.current.length===0 ? data : item.title.toLowerCase().includes(value.current.toLowerCase())
       })
 
@@ -37,8 +36,7 @@
       const sortByField = (field) => {
         return field === 'popularity' ? filterByFiller(fillerValue).sort((a, b) => a[field] < b[field] ? 1 : -1) :
             filterByFiller(fillerValue).sort((a, b) => a[field] < b[field] ? -1 : 1)
-      }
-```
+      }```
                                                                           
     <p>Others my examples in github, expirience with React in dj-react repository.</p>
   </li> 
