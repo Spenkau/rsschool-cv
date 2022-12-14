@@ -6,6 +6,78 @@
     <title>CV2</title>
 </head>
 <body>
+    <header>
+        <img src="./img/rs_school_js.svg" alt="logo">
+    </header>
+    <main>
+        <div class="first-viewport">
+            <div class="illustration-block">
+                <img src="./img/avatar.png" alt="My avatar" title="2D performance of me">
+            </div>
+            <div class="content-wrapper">
+                <div class="content-block">
+                    <div class="content">
+                        <img src="./img/avatar.png" alt="My avatar">
+                        <h2 style="text-align: center; padding: 15px;">About me</h2>
+                        <ol class="content-info">
+                            <li>1. Fullname: Alexander Kholyavski</li>
+                            <li>
+                                2. Contacts:
+                                <ul>
+                                    <li>Telegram - <a href="https://t.me/spenkau">Spenkau</a></li>
+                                    <li>Discord - @Spenkau</li>
+                                    <li>Email - kholyavskij@mail.ru</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p>
+                                    3. I'm learning JS about 8 month, started own career with React-dev course, has making project for this, but by some reasons this course was closed and I continued education. One month later I improved skills in vanilla JS and been doing this for three months. Later I and my partner started to make fullstack project React & Django where I was responsible for frontend part. This project we make and today. My future plans is to be good in fullstack development :)
+                                </p>
+                            </li>
+                            <li>
+                                <p>4. Skills: JS (middle lvl); React (low level); HTML & CSS (middle lvl); GIT (knowledge how to work in pair - commit, push, pull, merge, clone)</p>
+                            </li>
+                            <li>
+                                <p>5. Multi-level sorting on React below, other examples in GitHub, experience with React in dj-react repository.</p>
+                                <div class="code-examples">
+                                    <pre>
+                                    <code style="white-space: pre-wrap">
+const filterByTitle = () => data.filter(item => { return value.current.length===0 ? data : item.title.toLowerCase().includes(value.current.toLowerCase()) })
+const filterByFiller = (fillerValue) => {
+        return fillerValue === 2 ? filterByTitle() : filterByTitle().filter((item) => {
+            return item.isMeat === fillerValue
+    })
+}
+
+const sortByField = (field) => {
+    return field === 'popularity' ? filterByFiller(fillerValue).sort((a, b) => a[field] < b[field] ? 1 : -1) :
+        filterByFiller(fillerValue).sort((a, b) => a[field] < b[field] ? -1 : 1)
+}
+                                    </code></pre>
+                                </div>
+                            </li>
+                            <li>
+                                <p>
+                                    6. One work experience is making React app with online-DB mockapi for course of one of the companies in my city.
+                                    link1 - <a href="https://github.com/Spenkau/library">Click</a>
+                                    link2 - <a href="https://github.com/MaksimkaFishbain/dj_react_pizza">Click</a> - only frontend folder
+                                </p>
+                            </li>
+                            <li><p>7. Education: Hrodno college, specialty technician-programmer, sophomore year of college.</p></li>
+                            <li><p>8. English level is about A2, achieved by school and college practice.</p></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <ul>
+            <li>Link to course where I study this: <a href="https://rs.school/js/">RS School</a></li>
+            <li>Link to GitHub: <a href="https://github.com/Spenkau"><b>Spenkau</b></a></li>
+            <li>This CV was born in 2022</li>
+        </ul>
+    </footer>
 
 </body>
 </html>
