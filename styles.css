@@ -59,7 +59,9 @@ main {
     background: linear-gradient(90deg, #0e0809 94%, rgba(68,21,30,1) 100%);
     /*background: linear-gradient(90deg, #0e0809 100%, #44151e 0%);*/
 }
-
+.first-viewport > .content-wrapper > .content-block > .content > img {
+    display: none;
+}
 .first-viewport > .content-wrapper > .content-block > .content {
     margin: 30px 0 200px 30px;
     border-radius: 10px;
@@ -106,4 +108,107 @@ footer {
 footer > ul > li {
     display: inline-block;
     margin-right: 50px;
+}
+
+@media (min-width: 875px) and (max-width: 1330px) {
+    .first-viewport > .illustration-block {
+        position: relative;
+    }
+
+    .first-viewport > .illustration-block > img {
+        position: absolute;
+        right: 0;
+        width: 400px;
+        height: 500px;
+    }
+    .first-viewport > .content-wrapper > .content-block {
+        background: transparent;
+        position: relative;
+    }
+    .first-viewport > .content-wrapper > .content-block > .content {
+        width: 500px;
+        height: 800px;
+        position: absolute;
+        left: -100px;
+    }
+}
+
+@media (min-width: 575px) and (max-width: 875px){
+    .first-viewport > .content-wrapper > .content-block {
+        background: transparent;
+    }
+
+    .first-viewport {
+        display: flex;
+        flex-direction: column;
+    }
+    .first-viewport > .illustration-block {
+        display: none;
+    }
+    .first-viewport > .content-wrapper {
+        width: 100%;
+        height: 100%;
+    }
+    .first-viewport > .content-wrapper > .content-block > .content > img {
+        display: block;
+        float: left;
+        margin: 5px 10px 10px 5px;
+        width: 300px;
+        height: 400px;
+        border-radius: 20px;
+    }
+
+    .first-viewport > .content-wrapper > .content-block {
+        width: 100%;
+        height: 100%;
+        z-index: 5;
+    }
+
+    .first-viewport > .content-wrapper > .content-block > .content {
+        margin-top: 45px;
+        width: 90%;
+        height: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 575px) {
+    .first-viewport > .content-wrapper > .content-block {
+        background: transparent;
+    }
+
+    .first-viewport {
+        display: flex;
+        flex-direction: column;
+    }
+    .first-viewport > .illustration-block {
+        display: none;
+    }
+    .first-viewport > .content-wrapper {
+        width: 100%;
+        height: 100%;
+    }
+    .first-viewport > .content-wrapper > .content-block > .content > img {
+        display: block;
+        float: left;
+        margin: 5px 10px 10px 5px;
+        width: 300px;
+        height: 400px;
+        border-radius: 20px;
+    }
+
+    .first-viewport > .content-wrapper > .content-block {
+        width: 100%;
+        height: 100%;
+        z-index: 5;
+    }
+
+    .first-viewport > .content-wrapper > .content-block > .content {
+        margin-top: 45px;
+        width: 90%;
+        height: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

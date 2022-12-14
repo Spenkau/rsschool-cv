@@ -17,11 +17,12 @@
             <div class="content-wrapper">
                 <div class="content-block">
                     <div class="content">
+                        <img src="./img/avatar.png" alt="My avatar">
                         <h2 style="text-align: center; padding: 15px;">About me</h2>
                         <ol class="content-info">
-                            <li>Fullname: Alexander Kholyavski</li>
+                            <li>1. Fullname: Alexander Kholyavski</li>
                             <li>
-                                Contacts:
+                                2. Contacts:
                                 <ul>
                                     <li>Telegram - <a href="https://t.me/spenkau">Spenkau</a></li>
                                     <li>Discord - @Spenkau</li>
@@ -30,28 +31,29 @@
                             </li>
                             <li>
                                 <p>
-                                    I learning JS about 8 month, started own career with React-dev course, has making project for this, but by some reasons this course was closed and I continued education. One month later I improved skills in vanilla JS and been doing this for three months. Later I and my partner started to make fullstack project React & Django where I was responsible for frontend part. This project we make and today. My future plans is to be good in fullstack development :)
+                                    3. I'm learning JS about 8 month, started own career with React-dev course, has making project for this, but by some reasons this course was closed and I continued education. One month later I improved skills in vanilla JS and been doing this for three months. Later I and my partner started to make fullstack project React & Django where I was responsible for frontend part. This project we make and today. My future plans is to be good in fullstack development :)
                                 </p>
                             </li>
                             <li>
-                                <p>Skills: JS (middle lvl); React (low level); HTML & CSS (middle lvl); GIT (know how to work in pair - commit, push, pull, clone)</p>
+                                <p>4. Skills: JS (middle lvl); React (low level); HTML & CSS (middle lvl); GIT (knowledge how to work in pair - commit, push, pull, merge, clone)</p>
                             </li>
                             <li>
-                                <p>Multi-level sorting on React below, other examples in GitHub, expirience with React in dj-react repository.</p>
+                                <p>5. Multi-level sorting on React below, other examples in GitHub, experience with React in dj-react repository.</p>
                                 <div class="code-examples">
-                                    <code>
-                                        const filterByTitle = () => data.filter(item => { return value.current.length===0 ? data : item.title.toLowerCase().includes(value.current.toLowerCase()) })
-                                        const filterByFiller = (fillerValue) => {
-                                                return fillerValue === 2 ? filterByTitle() : filterByTitle().filter((item) => {
-                                                return item.isMeat === fillerValue
-                                            })
-                                        }
+                                    <pre>
+                                    <code style="white-space: pre-wrap">
+const filterByTitle = () => data.filter(item => { return value.current.length===0 ? data : item.title.toLowerCase().includes(value.current.toLowerCase()) })
+const filterByFiller = (fillerValue) => {
+        return fillerValue === 2 ? filterByTitle() : filterByTitle().filter((item) => {
+            return item.isMeat === fillerValue
+    })
+}
 
-                                        const sortByField = (field) => {
-                                            return field === 'popularity' ? filterByFiller(fillerValue).sort((a, b) => a[field] < b[field] ? 1 : -1) :
-                                            filterByFiller(fillerValue).sort((a, b) => a[field] < b[field] ? -1 : 1)
-                                        }
-                                    </code>
+const sortByField = (field) => {
+    return field === 'popularity' ? filterByFiller(fillerValue).sort((a, b) => a[field] < b[field] ? 1 : -1) :
+        filterByFiller(fillerValue).sort((a, b) => a[field] < b[field] ? -1 : 1)
+}
+                                    </code></pre>
                                 </div>
                             </li>
                             <li>
